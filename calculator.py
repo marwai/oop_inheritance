@@ -1,13 +1,13 @@
 from calculations import Function
 from area import Area
 class python_calculator(Function):
-    def __init__(self, add, sub, div, mult, remainder, num1,num2, user_input, base, height,area,*nums):
-        super().__init__(add, sub, div, mult, remainder, height, base)
+    def __init__(self, add, sub, div, mult, remainder, num1,num2, user_input,area):
+        super().__init__(add, sub, div, mult, remainder,area)
         self.num1 = int(num1)
         self.num2 = int(num2)
         self.user_input = str(user_input)
         self.area_arithmetic = area_arithmetic
-        self.nums = nums
+
     area_arithmetic = input("Calculate Area or use Arithmetic functions: A or AR ")
     if area_arithmetic == "AR":
         num1 = int(input("Please input your first number "))
@@ -37,7 +37,7 @@ class python_calculator(Function):
         num1 = int(input("What is the height? "))
         # input the second number
         num2 = int(input("What is the base? "))
-        print(str("0.5 * base * height =",Area.area(num1,num2,int(nums))))
+        print(str("0.5 * base * height ="), Function.area(num1,num2), str("cm\u00b2"))
     else:
         pass
         #

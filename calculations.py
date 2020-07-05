@@ -46,9 +46,7 @@ class Function:
         else:
             return "please try again"
 
-    class Area:
-        @staticmethod
-        def area(num1, num2):
-            return 0.5 * num1 * num2
+    def area(num1, num2):
+        return 0.5 * num1 * num2
 
 
