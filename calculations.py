@@ -7,13 +7,12 @@ class Function:
         self.mult = mult
         self.remainder = remainder
 
-
+    # Behaviours (methods) are defined in a class
     def add(num1, num2):
         return num1 + num2
 
-     # calls Main
 
-    # create a Main with two arguments to return a subtraction of 2 values given
+    # create a behaviour with two arguments to return a subtraction of 2 values given
     def sub(num1, num2):
         return num1 - num2
 
