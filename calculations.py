@@ -39,10 +39,10 @@ class Function:
         num1 = int(input("What's the number? \n"))
         if user == "inches":
             conversion = num1 / 2.54
-            return conversion
+            print(conversion)
         elif user == "cm":
             conversion = num1 * 2.54
-            return conversion
+            print(conversion)
         else:
             return "please try again"
 
