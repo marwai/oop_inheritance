@@ -1,5 +1,4 @@
 from calculations import Function
-from area import Area
 class python_calculator(Function):
     def __init__(self, add, sub, div, mult, remainder, num1,num2, user_input,area):
         super().__init__(add, sub, div, mult, remainder,area)
